@@ -4,6 +4,10 @@
   --font-primary: 'Quicksand', sans-serif;
 }
 
+@theme {
+  --font-header: 'Quicksand', sans-serif;
+}
+
 body {
   @apply m-5; /* Or use p-5 for padding */
 }
@@ -31,3 +35,7 @@ body {
   min-height: 100vh;
 }
 
+
+.animate-spin {
+  animation: spin 10s linear infinite;
+}

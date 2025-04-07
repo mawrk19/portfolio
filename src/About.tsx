@@ -17,13 +17,13 @@ function About() {
             <img
               src={bnw}
               alt="Logo"
-              className="absolute top-[150px] left-[-180px] h-150 w-auto z-0"
+              className="absolute top-[150px] left-[-180px] h-150 w-auto z-0 animate-spin"
             />
           </div>
 
           {/* Text Section */}
           <div className="text-white text-center md:text-left">
-            <h1 className="text-5xl mb-4 font-primary text-red-500">Who is Mark?</h1>
+            <h1 className="text-7xl mb-4 font-header  font-bold text-yellow-500">Who is Mark?</h1>
             <p className="text-xl mb-2 font-primary">
               Mark Acedo is a fullstack developer<br /> and illustrator from
               Caloocan City. <br />Currently accepting clients and full-time <br />
@@ -35,8 +35,8 @@ function About() {
               and thinking on their feet. <br /> <br />
             </p>
             <p className="text-xl mb-2 font-primary">
-              Mark loves designing websites <br />
-              and components and creating useful<br />
+              Mark loves designing websites, <br />
+              components and creating useful<br />
               applications that can upgrade the <br />
               quality of living with the use
               of tech. <br />
@@ -44,9 +44,12 @@ function About() {
             </p>
 
             <div className="mt-5 font-primary">
-              <button className="bg-transparent font-primary text-white text-3xl py-2 px-4 border border-white rounded transition duration-300 hover:bg-yellow-500 hover:text-red ">
-                Get in touch
-              </button>
+            <a href="#footer">
+  <button className="bg-transparent font-primary text-white text-3xl py-2 px-4 border border-white rounded transition duration-300 hover:bg-yellow-500 hover:text-red">
+    Get in touch
+  </button>
+</a>
+
             </div>
           </div>
         </div>

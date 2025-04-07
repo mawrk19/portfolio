@@ -5,10 +5,8 @@ function App() {
 
   return (
     <>
-      <ParallaxComponent></ParallaxComponent>
-
-
-     
+      <ParallaxComponent>  
+      </ParallaxComponent>
     </>
   );
 }
