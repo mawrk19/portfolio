@@ -47,9 +47,11 @@ function About() {
                   Get in touch
                 </button>
 
+              <a href="/ResumeNiMark.pdf" download>
                 <button className="bg-transparent font-primary text-white text-lg sm:text-2xl py-2 sm:py-3 px-4 sm:px-6 border border-white rounded transition duration-300 hover:bg-yellow-500 hover:text-red">
                   mawrks Resume
                 </button>
+              </a>
               </a>
             </div>
           </div>
