@@ -29,7 +29,7 @@ function ParallaxComponent() {
           factor={2}
           style={{ 
             backgroundImage: `url(${bg})`, 
-            backgroundSize: 'cover',
+            backgroundPosition: 'center -100px',
             zIndex: -2,
           }}
         />
@@ -38,7 +38,7 @@ function ParallaxComponent() {
         <ParallaxLayer 
           offset={1}
           speed={1} 
-          factor={2}
+          factor={1}
           sticky={{ start: 1, end: 1.5 }}
           style={{ zIndex: 8 }}
         >
@@ -52,7 +52,7 @@ function ParallaxComponent() {
           offset={3}
           speed={0.3}
           factor={1}
-          sticky={{ start: 2.8, end: 3.2 }}
+          sticky={{ start: 2.8, end: 3 }}
           style={{
             zIndex: 9,
             display: 'flex',
@@ -112,7 +112,6 @@ function ParallaxComponent() {
             backgroundImage: `url(${sakura2})`,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'right top',
             zIndex: -1,
           }}
         />

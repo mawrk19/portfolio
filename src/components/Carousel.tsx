@@ -25,7 +25,7 @@ const Carousel: React.FC<CarouselProps> = ({
   }, [autoSlide, autoSlideInterval, totalSlides]);
 
   return (
-    <div className="relative overflow-hidden w-[60%] h-[60vh] mx-auto rounded-lg">
+    <div className="relative overflow-hidden w-[90%] md:w-[60%] h-[60vh] mx-auto rounded-lg">
       <div
         className="flex transition-transform duration-700 ease-in-out h-full"
         style={{ transform: `translateX(-${current * 100}%)` }}
