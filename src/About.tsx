@@ -1,5 +1,4 @@
 import mark from './assets/mawrk.png';
-// Removed logo import as it's no longer used
 
 function About() {
   return (
@@ -42,10 +41,14 @@ function About() {
               don’t be shy — say hi to Mark ❤️
             </p>
 
-            <div className="mt-5 font-primary">
-              <a href="#footer">
-                <button className="bg-transparent font-primary text-white text-2xl py-2 px-4 border border-white rounded transition duration-300 hover:bg-yellow-500 hover:text-red">
+            <div className="mt-5 font-primary flex flex-col sm:flex-row sm:space-x-4 items-center justify-center sm:justify-start">
+              <a href="#footer" className="space-x-4"> {/* Adjust space between buttons */}
+                <button className="bg-transparent font-primary text-white text-lg sm:text-2xl py-2 sm:py-3 px-4 sm:px-6 border border-white rounded transition duration-300 hover:bg-yellow-500 hover:text-red mb-4 sm:mb-0">
                   Get in touch
+                </button>
+
+                <button className="bg-transparent font-primary text-white text-lg sm:text-2xl py-2 sm:py-3 px-4 sm:px-6 border border-white rounded transition duration-300 hover:bg-yellow-500 hover:text-red">
+                  mawrks Resume
                 </button>
               </a>
             </div>
