@@ -2,12 +2,12 @@ import { FaGithub, FaLinkedin, FaGoogle } from "react-icons/fa"; // Importing ic
 
 function Footer() {
   return (
-    <footer className="w-full h-auto bg-gray-800 text-white py-6 mt-20 font-primary absolute bottom-0">
+    <footer className="w-full h-auto bg-[#1f0739] text-white py-6 mt-20 font-primary absolute bottom-0">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
       
       {/* Get in Touch Section */}
       <div className="w-full md:w-[40%] text-center md:text-left mb-6 md:mb-0">
-        <h2 className="text-3xl font-semibold mb-4">Get in Touch</h2>
+        <h2 className="text-3xl font-semibold mb-4 text-[#efd171]">Get in Touch</h2>
         <p className="text-l mb-4">I’d love to hear from you. Feel free to drop a message!</p>
 
         {/* Contact Form */}
@@ -38,7 +38,7 @@ function Footer() {
 
       {/* Icons Section - Left-Aligned */}
       <div className="w-full md:w-[40%] text-center md:text-left mb-6 md:mb-0">
-          <h1 className="text-4xl font-bold">Reach me out</h1>
+          <h1 className="text-4xl font-bold text-[#efd171]">Reach me out</h1>
           <p className="text-xl mb-4">You can reach me out with these links.</p>
 
           {/* Icons */}
@@ -47,7 +47,7 @@ function Footer() {
               href="https://github.com/mawrk19"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-blue-500"
+              className="text-[white] hover:text-blue-500"
             >
               <FaGithub size={30} />
             </a>
@@ -55,7 +55,7 @@ function Footer() {
               href="mailto:your-gercee19@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-blue-500"
+              className="text-[white] hover:text-blue-500"
             >
               <FaGoogle size={30} />
             </a>
@@ -63,7 +63,7 @@ function Footer() {
               href="https://www.linkedin.com/in/mark-acedo-402b17285/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-blue-500"
+              className="text-[white] hover:text-blue-500"
             >
               <FaLinkedin size={30} />
             </a>

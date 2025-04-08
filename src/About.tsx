@@ -22,34 +22,35 @@ function About() {
           </div>
 
           {/* Text Section */}
-          <div className="text-white text-center md:text-left">
-            <h1 className="text-7xl mb-4 font-header  font-bold text-yellow-500">Who is Mark?</h1>
-            <p className="text-xl mb-2 font-primary">
-              Mark Acedo is a fullstack developer<br /> and illustrator from
-              Caloocan City. <br />Currently accepting clients and full-time <br />
-              opportunities. <br /> <br />
+          <div className="text-white text-center md:text-left max-w-xl">
+            <h1 className="text-7xl mb-6 font-header font-bold text-yellow-500">Who is Mark?</h1>
+            
+            <p className="text-xl mb-6 font-primary leading-relaxed">
+              Mark Acedo is a passionate fullstack developer and illustrator from Caloocan City.
+              Whether it’s building immersive UIs or sketching up ideas, Mark brings creativity into everything.
             </p>
-            <p className="text-xl mb-2 font-primary">
-              With many years of creative experience <br />across multiple projects.
-              <br /> Mark loves learning new things <br />
-              and thinking on their feet. <br /> <br />
+
+            <p className="text-xl mb-6 font-primary leading-relaxed">
+              With years of experience across multiple industries and projects, 
+              he’s learned to adapt fast, think sharp, and deliver quality work — always with a curious mind.
             </p>
-            <p className="text-xl mb-2 font-primary">
-              Mark loves designing websites, <br />
-              components and creating useful<br />
-              applications that can upgrade the <br />
-              quality of living with the use
-              of tech. <br />
-              While you're here, be sure to say hi to Mark <span>❤️</span>
+
+            <p className="text-xl mb-6 font-primary leading-relaxed">
+              He enjoys crafting user-friendly websites, reusable components, and smart apps
+              that solve real problems and improve everyday lives. Tech with purpose, always.
+            </p>
+
+            <p className="text-xl mb-6 font-primary leading-relaxed">
+              Currently open to freelance and full-time opportunities. While you're here... 
+              don’t be shy — say hi to Mark ❤️
             </p>
 
             <div className="mt-5 font-primary">
-            <a href="#footer">
-  <button className="bg-transparent font-primary text-white text-3xl py-2 px-4 border border-white rounded transition duration-300 hover:bg-yellow-500 hover:text-red">
-    Get in touch
-  </button>
-</a>
-
+              <a href="#footer">
+                <button className="bg-transparent font-primary text-white text-3xl py-2 px-4 border border-white rounded transition duration-300 hover:bg-yellow-500 hover:text-red">
+                  Get in touch
+                </button>
+              </a>
             </div>
           </div>
         </div>

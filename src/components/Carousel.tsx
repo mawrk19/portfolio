@@ -1,4 +1,3 @@
-// src/components/Carousel.tsx
 import React, { useEffect, useState, Children, ReactNode } from "react";
 
 interface CarouselProps {
@@ -10,7 +9,7 @@ interface CarouselProps {
 const Carousel: React.FC<CarouselProps> = ({
   children,
   autoSlide = false,
-  autoSlideInterval = 3000,
+  autoSlideInterval = 5000,
 }) => {
   const [current, setCurrent] = useState(0);
   const totalSlides = Children.count(children);
@@ -26,7 +25,7 @@ const Carousel: React.FC<CarouselProps> = ({
   }, [autoSlide, autoSlideInterval, totalSlides]);
 
   return (
-    <div className="relative overflow-hidden w-[60%] h-[60vh] mx-auto rounded-lg shadow-lg">
+    <div className="relative overflow-hidden w-[60%] h-[60vh] mx-auto rounded-lg">
       <div
         className="flex transition-transform duration-700 ease-in-out h-full"
         style={{ transform: `translateX(-${current * 100}%)` }}
