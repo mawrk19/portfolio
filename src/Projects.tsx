@@ -3,6 +3,8 @@ import logo from "./assets/Logo ni Mark bnw.svg";
 import kopilism from "./assets/kopilism.png";
 import sage from "./assets/sage.png";
 import sis from "./assets/sis.png";
+import cpu from "./assets/cpu.png";
+import bit from "./assets/16bit.png";
 
 function Projects() {
   return (
@@ -34,6 +36,14 @@ function Projects() {
 
         <div className="bg-[#6c5ce7] w-full h-full flex items-center justify-center text-white text-3xl">
         <img src={sage} alt="sage" className="" />
+        </div>
+
+        <div className="bg-[#6c5ce7] w-full h-full flex items-center justify-center text-white text-3xl">
+        <img src={bit} alt="bit" className="" />
+        </div>
+
+        <div className="bg-[#6c5ce7] w-full h-full flex items-center justify-center text-white text-3xl">
+        <img src={cpu} alt="cpu" className="" />
         </div>
       </Carousel>
     </div>
