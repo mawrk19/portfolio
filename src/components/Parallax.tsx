@@ -20,7 +20,7 @@ function ParallaxComponent() {
       <Parallax 
         pages={5} 
         style={{ top: 0, left: 0 }} 
-        className="parallax-container absolute w-full h-full bg-[#bd4546]"
+        className="parallax-container absolute w-full h-full bg-[#4d6937]"
       >
         {/* Background */}
         <ParallaxLayer
