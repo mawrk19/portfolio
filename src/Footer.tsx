@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaGoogle } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="fixed bottom-0 w-full bg-[#1f0739] text-white py-10 font-primary z-10">
+    <footer className="relative bottom-0 w-full bg-[#1f0739] text-white py-10 font-primary z-10 mt-20">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-start gap-10">
         {/* Contact Form Section */}
         <div className="w-full md:w-1/2">

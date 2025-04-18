@@ -1,7 +1,7 @@
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import bg from '../assets/bg.png';
 import sakura1 from '../assets/sakura1.svg';
-import sakura2 from '../assets/sakura2.png';
+import sakura2 from '../assets/sakura2.svg';
 import mawrk from '../assets/Logo ni Mark.png';
 import About from '../About';
 import Projects from '../Projects';
@@ -18,7 +18,7 @@ function ParallaxComponent() {
   return (
     <div className="relative h-[100vh]">
       <Parallax 
-        pages={5} 
+        pages={6} 
         style={{ top: 0, left: 0 }} 
         className="parallax-container absolute w-full h-full bg-[#4d6937]"
       >
@@ -44,20 +44,19 @@ function ParallaxComponent() {
         >
           <div id="about">
             <About />
+        
           </div>
         </ParallaxLayer>
 
-        {/* Projects Section */}
-        <ParallaxLayer 
+        <ParallaxLayer
           offset={3}
           speed={0.3}
-          factor={1}
-          sticky={{ start: 2.8, end: 3 }}
           style={{
             zIndex: 9,
             display: 'flex',
             justifyContent: 'center',
-            alignItems: 'center',
+            alignItems: 'start',
+            paddingTop: '80px',
           }}
         >
           <div id="projects" className="w-full">
@@ -65,14 +64,19 @@ function ParallaxComponent() {
           </div>
         </ParallaxLayer>
 
-        {/* Footer Section */}
+
         <ParallaxLayer
-          offset={4}
-          speed={1}
-          factor={1}
-          style={{ zIndex: 12 }}
+          offset={5}
+          speed={0.2}
+          style={{
+            zIndex: 12,
+            display: 'flex',
+            alignItems: 'flex-end', // push footer to bottom
+            justifyContent: 'center',
+            paddingBottom: '40px',
+          }}
         >
-          <div id="footer">
+          <div id="footer" className="w-full absolute bottom-0">
             <Footer />
           </div>
         </ParallaxLayer>
@@ -81,7 +85,7 @@ function ParallaxComponent() {
         <ParallaxLayer
           offset={0}
           speed={0.5}
-          factor={4}
+          factor={4.3}
           style={{ 
             backgroundImage: `url(${sakura1})`,
             backgroundSize: 'cover',
