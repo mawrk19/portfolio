@@ -2,7 +2,7 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import bg from '../assets/bg.png';
 import sakura1 from '../assets/sakura1.svg';
 import sakura2 from '../assets/sakura2.svg';
-import mawrk from '../assets/Logo ni Mark.png';
+import mawrk from '../assets/logo.png';
 import About from '../About';
 import Projects from '../Projects';
 import Footer from '../Footer';
@@ -50,7 +50,8 @@ function ParallaxComponent() {
 
         <ParallaxLayer
           offset={3}
-          speed={0.3}
+          speed={-1}
+          sticky={{ start: 2.8, end: 3 }}
           style={{
             zIndex: 9,
             display: 'flex',

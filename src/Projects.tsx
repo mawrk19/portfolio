@@ -1,11 +1,11 @@
 import ProjectCard from "./components/ProjectCard";
-import logo from "./assets/Logo ni Mark bnw.svg";
+import logo from "./assets/logo_bnw.svg";
 import kopilism from "./assets/kopilism.png";
 import sage from "./assets/sage.png";
 import sis from "./assets/sis.png";
 import cpu from "./assets/cpu.png";
 import bit from "./assets/16bit.png";
-import Carousel from "./components/TechIconSlider";
+import ScrollVelocity from "./components/ScrollVelocity";
 
 function Projects() {
   const projectData = [
@@ -50,6 +50,11 @@ function Projects() {
   return (
     <section className="flex flex-col items-center w-full px-4 pt-24 md:pt-36 pb-20">
 
+<ScrollVelocity
+        texts={['Mark Acedo', 'Flower Boy']} 
+        className="custom-scroll-text"
+      />
+      
       <div className="w-full max-w-6xl mx-auto text-center md:text-left px-2 md:px-0">
         <h1 className="text-3xl sm:text-4xl md:text-6xl font-header font-bold text-yellow-500 leading-tight mb-4">
           My Projects
@@ -71,8 +76,12 @@ function Projects() {
           />
         ))}
       </div>
+
   
-      <Carousel />
+      <ScrollVelocity
+        texts={['Mark Acedo', 'Flower Boy']} 
+        className="custom-scroll-text"
+      />
     </section>
   );
   

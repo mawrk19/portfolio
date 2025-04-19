@@ -1,5 +1,5 @@
 
-import logo from "src/assets/Logo ni Mark bnw.svg";
+import logo from "src/assets/logo_bnw.svg";
 import kopilism from "src/assets/kopilism.png";
 import sage from "src/assets/sage.png";
 import sis from "src/assets/sis.png";
