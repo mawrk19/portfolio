@@ -1,5 +1,5 @@
 
-import logo from "src/assets/logo_bnw.svg";
+import tesda from "src/assets/tesda.png";
 import kopilism from "src/assets/kopilism.png";
 import sage from "src/assets/sage.png";
 import sis from "src/assets/sis.png";
@@ -7,16 +7,14 @@ import cpu from "src/assets/cpu.png";
 import bit from "src/assets/16bit.png";
 
 export const projectDetails = {
-  logo: {
-    title: "My Logo",
-    img: logo,
-    content: `This is the story behind my logo.
+  tesda: {
+    title: "NCIII JAVA",
+    img: tesda,
+    content: `This certificate represents my completion of the NC III in Java Programming, issued by TESDA.
 
-I designed it to reflect minimalism, clarity, and a touch of personal flair to represent my freelance and dev brand.
+It's more than just a credential—it's a milestone in my journey as a developer. It reflects the foundational knowledge and practical skills I gained in object-oriented programming, application development, and software design.
 
-It works well on both light and dark backgrounds and gives off a strong personal signature. The circular frame and simple mark are designed to remain consistent across screen sizes and media formats.
-
-More than just branding, it’s an emblem of who I am as a developer—simple, chill, and just like a flower always looking for a brighter future.`,
+Receiving this certification reinforced my passion for clean, efficient code and strengthened my confidence as both a freelancer and a tech enthusiast. It’s a badge of dedication, discipline, and the drive to keep growing in the field of software development.`,
   },
   sis: {
     title: "Student Info System",

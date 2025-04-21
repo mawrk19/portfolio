@@ -72,7 +72,7 @@ function ParallaxComponent() {
           style={{
             zIndex: 12,
             display: 'flex',
-            alignItems: 'flex-end', // push footer to bottom
+            alignItems: 'flex-end',
             justifyContent: 'center',
             paddingBottom: '40px',
           }}

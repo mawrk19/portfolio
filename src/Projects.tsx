@@ -1,5 +1,5 @@
 import ProjectCard from "./components/ProjectCard";
-import logo from "./assets/logo_bnw.svg";
+import tesda from "./assets/tesda.png";
 import kopilism from "./assets/kopilism.png";
 import sage from "./assets/sage.png";
 import sis from "./assets/sis.png";
@@ -10,10 +10,10 @@ import ScrollVelocity from "./components/ScrollVelocity";
 function Projects() {
   const projectData = [
     {
-      img: logo,
-      title: "My Logo",
-      body: "My brand identity logo. Minimal and clean for personal projects and freelance dev branding.",
-      link: "/blog/logo",
+      img: tesda,
+      title: "NCIII JAVA",
+      body: "this certificate represents my completion of the NC III in Java Programming, issued by TESDA.",
+      link: "/blog/tesda",
     },
     {
       img: sis,
