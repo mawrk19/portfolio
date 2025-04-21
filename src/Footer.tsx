@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaGoogle } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="relative bottom-0 w-full bg-[#1f0739] text-white py-10 font-primary z-10 mt-20">
+    <footer className="relative w-[120%] bottom-[-50px] bg-[#1f0739] text-white py-10 font-primary z-10 mt-20">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-center items-start gap-10">
 
         {/* Social Links Section */}
@@ -46,5 +46,6 @@ function Footer() {
     </footer>
   );
 }
+
 
 export default Footer;

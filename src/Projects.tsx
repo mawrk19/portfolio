@@ -6,6 +6,7 @@ import sis from "./assets/sis.png";
 import cpu from "./assets/cpu.png";
 import bit from "./assets/16bit.png";
 import ScrollVelocity from "./components/ScrollVelocity";
+import Footer from "./Footer";
 
 function Projects() {
   const projectData = [
@@ -82,10 +83,13 @@ function Projects() {
   texts={['Mark Acedo', 'Flower Boy']}
   velocity={20} // Reduced from 100 to slow it down
   className="custom-scroll-text"
-/>
-    </section>
-  );
   
+/>
+<Footer  />
+    </section>
+    
+  );
+<Footer />
 }
 
 export default Projects;

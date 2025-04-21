@@ -18,7 +18,7 @@ export default function BlogPage() {
 
   return (
     <div
-      className="min-h-screen flex flex-col items-center py-10 bg-fixed bg-center bg-no-repeat bg-cover" 
+      className="min-h-screen flex flex-col items-center py-10 bg-fixed bg-center bg-no-repeat bg-cover overflow-hidden" 
       style={{ backgroundImage: `url(${bg})` }}
     >
       <Navbar />
@@ -39,9 +39,8 @@ export default function BlogPage() {
         </div>
 
       </div>
-      <div className="relative bottom-[-10vh] w-full my-0">
-        <Footer />
-      </div>
+      <Footer />
+
     </div>
 
     

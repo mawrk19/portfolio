@@ -5,7 +5,7 @@ import sakura2 from '../assets/sakura2.svg';
 import mawrk from '../assets/logo.png';
 import About from '../About';
 import Projects from '../Projects';
-import Footer from '../Footer';
+
 
 function ParallaxComponent() {
   const scrollToTop = () => {
@@ -18,7 +18,7 @@ function ParallaxComponent() {
   return (
     <div className="relative h-[100vh]">
       <Parallax 
-        pages={6} 
+        pages={4.9} 
         style={{ top: 0, left: 0 }} 
         className="parallax-container absolute w-full h-full bg-[#4d6937]"
       >
@@ -67,7 +67,7 @@ function ParallaxComponent() {
 
 
         <ParallaxLayer
-          offset={5}
+          offset={4.6}
           speed={0.2}
           style={{
             zIndex: 12,
@@ -78,7 +78,7 @@ function ParallaxComponent() {
           }}
         >
           <div id="footer" className="w-full absolute bottom-0">
-            <Footer />
+            {/* <Footer /> */}
           </div>
         </ParallaxLayer>
 
