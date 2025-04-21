@@ -52,6 +52,7 @@ function Projects() {
  
 <ScrollVelocity
         texts={['Mark Acedo', 'Flower Boy']} 
+        velocity={100}
         className="custom-scroll-text"
       />
       
@@ -80,6 +81,7 @@ function Projects() {
   
       <ScrollVelocity
         texts={['Mark Acedo', 'Flower Boy']} 
+        velocity={100}
         className="custom-scroll-text"
       />
     </section>

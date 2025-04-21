@@ -44,8 +44,7 @@ interface ScrollVelocityProps {
   scrollerStyle?: React.CSSProperties;
 }
 
-// Updated to handle potentially null refs properly
-function useElementWidth(ref: React.RefObject<HTMLElement | null>): number {
+function useElementWidth(ref: React.RefObject<HTMLElement>): number {
   const [width, setWidth] = useState(0);
 
   useLayoutEffect(() => {
@@ -122,7 +121,7 @@ export const ScrollVelocity: React.FC<ScrollVelocityProps> = ({
     });
 
     const directionFactor = useRef<number>(1);
-    useAnimationFrame(( delta) => {
+    useAnimationFrame((t, delta) => {
       let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
 
       if (velocityFactor.get() < 0) {
@@ -150,11 +149,11 @@ export const ScrollVelocity: React.FC<ScrollVelocityProps> = ({
 
     return (
       <div
-        className={`${parallaxClassName || ''} relative overflow-hidden`}
+        className={`${parallaxClassName} relative overflow-hidden`}
         style={parallaxStyle}
       >
         <motion.div
-          className={`${scrollerClassName || ''} flex whitespace-nowrap text-center font-sans text-4xl font-bold tracking-[-0.02em] drop-shadow md:text-[5rem] md:leading-[5rem]`}
+          className={`${scrollerClassName} flex whitespace-nowrap text-center font-sans text-4xl font-bold tracking-[-0.02em] drop-shadow md:text-[5rem] md:leading-[5rem]`}
           style={{ x, ...scrollerStyle }}
         >
           {spans}
