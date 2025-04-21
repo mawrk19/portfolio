@@ -50,12 +50,11 @@ function Projects() {
   return (
     <section className="flex flex-col items-center w-full px-4 pt-24 md:pt-36 pb-20">
  
-<ScrollVelocity
-        texts={['Mark Acedo', 'Flower Boy']} 
-        velocity={100}
-        className="custom-scroll-text"
-      />
-      
+ <ScrollVelocity
+  texts={['Mark Acedo', 'Flower Boy']}
+  velocity={20} // Reduced from 100 to slow it down
+  className="custom-scroll-text"
+/>
       <div className="w-full max-w-6xl mx-auto text-center md:text-left px-2 md:px-0">
         <h1 className="text-3xl sm:text-4xl md:text-6xl font-header font-bold text-yellow-500 leading-tight mb-4">
           My Projects
@@ -80,9 +79,10 @@ function Projects() {
 
   
       <ScrollVelocity
-        texts={['Mark Acedo', 'Flower Boy']} 
-        className="custom-scroll-text"
-      />
+  texts={['Mark Acedo', 'Flower Boy']}
+  velocity={20} // Reduced from 100 to slow it down
+  className="custom-scroll-text"
+/>
     </section>
   );
   
