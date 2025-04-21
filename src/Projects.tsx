@@ -49,7 +49,7 @@ function Projects() {
 
   return (
     <section className="flex flex-col items-center w-full px-4 pt-24 md:pt-36 pb-20">
-
+ 
 <ScrollVelocity
         texts={['Mark Acedo', 'Flower Boy']} 
         className="custom-scroll-text"
