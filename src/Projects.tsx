@@ -50,17 +50,20 @@ function Projects() {
 
   return (
     <section className="flex flex-col items-center w-full px-4 pt-24 md:pt-36 pb-20">
- 
- <ScrollVelocity
-  texts={['Mark Acedo', 'Flower Boy']}
-  velocity={20} // Reduced from 100 to slow it down
-  className="custom-scroll-text"
-/>
+
+      <div className="absolute top-[0px] z-[-1]">
+        <ScrollVelocity
+        texts={['Mark Acedo', 'Flower Boy']}
+        velocity={20} // Reduced from 100 to slow it down
+        className="custom-scroll-text text-[#372d3b]"
+      />
+      </div>
+
       <div className="w-full max-w-6xl mx-auto text-center md:text-left px-2 md:px-0">
         <h1 className="text-3xl sm:text-4xl md:text-6xl font-header font-bold text-yellow-500 leading-tight mb-4">
           My Projects
         </h1>
-        <p className="text-sm sm:text-base md:text-xl font-primary font-semibold text-gray-700 mb-8 max-w-3xl mx-auto md:mx-0 leading-relaxed">
+        <p className="text-sm sm:text-base md:text-xl font-primary font-semibold text-[#bcbc82] mb-8 max-w-3xl mx-auto md:mx-0 leading-relaxed">
           Here are some of the projects I have worked on.<br />
           It ain't much, but it's honest work.
         </p>
@@ -79,12 +82,7 @@ function Projects() {
       </div>
 
   
-      <ScrollVelocity
-  texts={['Mark Acedo', 'Flower Boy']}
-  velocity={20} // Reduced from 100 to slow it down
-  className="custom-scroll-text"
-  
-/>
+      
 <Footer  />
     </section>
     

@@ -5,6 +5,7 @@ import sakura2 from '../assets/sakura2.svg';
 import mawrk from '../assets/logo.png';
 import About from '../About';
 import Projects from '../Projects';
+import ScrollVelocity from './ScrollVelocity';
 
 
 function ParallaxComponent() {
@@ -103,12 +104,21 @@ function ParallaxComponent() {
           style={{ 
             backgroundImage: `url(${mawrk})`,
             backgroundRepeat: 'no-repeat',
-            backgroundSize: '200px auto',
-            backgroundPosition: 'center 300px',
+            backgroundSize: '250px auto',
+            backgroundPosition: 'center 250px',
             zIndex: -1,
           }}
         />
-
+        <div className='absolute top-[550px] z-[-1]'>
+          <ScrollVelocity
+            
+            texts={["Mark's Portfolio", 'Scroll Down']}
+            velocity={20} 
+            className="custom-scroll-text text-[#bcbc82]"
+          />
+        </div>
+        <ParallaxLayer/>
+        
         <ParallaxLayer
           offset={0}
           speed={0.6}
