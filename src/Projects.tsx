@@ -5,7 +5,6 @@ import sage from "./assets/sage.png";
 import sis from "./assets/sis.png";
 import cpu from "./assets/cpu.png";
 import bit from "./assets/16bit.png";
-import Footer from "./Footer";
 
 function Projects() {
   const projectData = [
@@ -71,14 +70,8 @@ function Projects() {
           />
         ))}
       </div>
-
-  
-      
-<Footer  />
-    </section>
-    
+    </section> 
   );
-<Footer />
 }
 
 export default Projects;

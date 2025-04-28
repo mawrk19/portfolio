@@ -6,6 +6,7 @@ import mawrk from '../assets/logo.png';
 import About from '../About';
 import Projects from '../Projects';
 import { IoIosArrowDown } from "react-icons/io";
+import Footer from '../Footer';
 
 function ParallaxComponent() {
   const scrollToTop = () => {
@@ -104,18 +105,12 @@ function ParallaxComponent() {
         
         <ParallaxLayer
           offset={4.6}
-          speed={0.2}
-          style={{
-            zIndex: 12,
-            display: 'flex',
-            alignItems: 'flex-end',
-            justifyContent: 'center',
-            paddingBottom: '40px',
-          }}
         >
-          <div id="footer" className="w-full absolute bottom-0">
-            {/* <Footer /> */}
-          </div>
+          
+        <>
+        <Footer />
+        </>
+
         </ParallaxLayer>
         
         {/* Enhanced decorative layers */}

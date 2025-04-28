@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaGoogle } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="relative w-[120%] bottom-[-50px] bg-[#1f0739] text-white py-10 font-primary z-10 mt-20">
+    <footer className="relative p-2 mb-2 w-[100%] bg-[#1f0739] text-white py-10 font-primary z-999">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-center items-start gap-10">
 
         {/* Social Links Section */}
@@ -40,7 +40,7 @@ function Footer() {
       </div>
 
       {/* Footer Bottom Text */}
-      <div className="mt-8 text-center text-sm text-gray-400">
+      <div className="mt-2 text-center text-sm text-gray-400">
         © {new Date().getFullYear()} Mark Acedo. All rights reserved.
       </div>
     </footer>
