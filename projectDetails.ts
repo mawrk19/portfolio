@@ -57,6 +57,7 @@ Tech Stack:
 - Tailwind CSS for smooth styling
 - Express.js for API handling
 - GPT-4 for AI responses
+- https://text-adventure-six.vercel.app/
 
 Each playthrough feels unique thanks to real-time AI prompts, offering a balance between classic RPG and emergent storytelling.`,
   },
