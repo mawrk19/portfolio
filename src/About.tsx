@@ -47,7 +47,7 @@ function About() {
               </button>
             </a>
 
-            <a href="/Acedo-Resume.pdf" download>
+            <a href="/Acedo, Mark Resume.pdf" download>
               <button className="bg-transparent text-sm sm:text-lg text-white py-2 px-5 border border-white rounded hover:bg-yellow-500 hover:text-black transition duration-300">
                 mawrks Resume
               </button>
