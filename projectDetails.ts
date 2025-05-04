@@ -4,7 +4,7 @@ import kopilism from "src/assets/kopilism.png";
 import sage from "src/assets/sage.png";
 import sis from "src/assets/sis.png";
 import cpu from "src/assets/cpu.png";
-import bit from "src/assets/16bit.png";
+import kpop from "src/assets/kpop.png";
 
 export const projectDetails = {
   tesda: {
@@ -61,13 +61,33 @@ Tech Stack:
 
 Each playthrough feels unique thanks to real-time AI prompts, offering a balance between classic RPG and emergent storytelling.`,
   },
-  "16bit": {
-    title: "16-Bit Game",
-    img: bit,
-    content: `A retro-inspired arcade game that blends pixel art nostalgia with basic computer architecture concepts.
+  "kpop": {
+    title: "K-Express",
+    img: kpop,
+    content: `A website dedicated to Kpop enthusiasts.
 
 Created with:
-- Logisim Evolution to simulate the underlying CPU operations
+- HTML5 and CSS3 for structure and styling and JS for interactivity.
+- https://kexpress.vercel.app/
+
+Features:
+- User-Friendly Interface
+  Clean and intuitive design for easy navigation across the website.
+
+- K-News Section
+  Latest updates about Kpop groups, idols, concerts, awards, and industry trends.
+
+- K-Music Videos Archive
+  A curated collection of music videos from various Kpop artists.
+
+- K-Companies Directory
+  Detailed profiles of major Kpop entertainment companies and their artists.
+
+- Search Functionality (if applicable)
+  Quickly find specific groups, idols, or companies.
+
+- Responsive Design
+  Accessible across different devices including phones, tablets, and desktops.
 
 Designed as an educational game to demonstrate how digital signals affect movement, score calculation, and game logic. Ideal for beginners exploring both web and hardware simulation.`,
   },

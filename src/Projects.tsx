@@ -4,7 +4,7 @@ import kopilism from "./assets/kopilism.png";
 import sage from "./assets/sage.png";
 import sis from "./assets/sis.png";
 import cpu from "./assets/cpu.png";
-import bit from "./assets/16bit.png";
+import kpop from "./assets/kpop.png";
 
 function Projects() {
   const projectData = [
@@ -33,10 +33,10 @@ function Projects() {
       link: "/blog/sage",
     },
     {
-      img: bit,
-      title: "16-Bit Game",
-      body: "A pixel-style game using HTML Logisim Evolution. Inspired by retro arcade style.",
-      link: "/blog/16bit",
+      img: kpop,
+      title: "K-Express",
+      body: "A website dedicated to Kpop enthusiasts.",
+      link: "/blog/kpop",
     },
     {
       img: cpu,
