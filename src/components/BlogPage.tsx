@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { projectDetails } from "../../projectDetails";
 import Footer from "../Footer";
 import bg from "../assets/rect_bg.png";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 
 export default function BlogPage() {
   const { projectId } = useParams();
@@ -21,7 +21,7 @@ export default function BlogPage() {
       className="min-h-screen flex flex-col items-center py-10 bg-fixed bg-center bg-no-repeat bg-cover overflow-hidden" 
       style={{ backgroundImage: `url(${bg})` }}
     >
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="w-full max-w-4xl my-5 bg-transparent shadow-lg rounded-2xl p-6 md:p-8 backdrop-blur-sm">
         
         <h1 className="text-3xl md:text-5xl font-bold font-header text-[#1f0739] mb-4 md:mb-6">
