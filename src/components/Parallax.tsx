@@ -35,50 +35,44 @@ function ParallaxComponent() {
     const ctx = gsap.context(() => {
       const scroller = containerRef.current;
       
-      // Speed mappings based on react-spring factor & speed:
-      // A positive yPercent makes it move slower than scroll (pushing it down)
-      // A negative yPercent makes it move faster than scroll (pulling it up)
-      
       if (bgLayerRef.current) gsap.to(bgLayerRef.current, {
-        yPercent: 30, // equivalent to speed 0.5
+        yPercent: 30,
         ease: 'none',
         scrollTrigger: { trigger: scroller, start: 'top top', end: 'bottom top', scrub: true, scroller }
       });
       
       if (textureOverlayRef.current) gsap.to(textureOverlayRef.current, {
-        yPercent: 20, // equivalent to speed 0.3
+        yPercent: 20,
         ease: 'none',
         scrollTrigger: { trigger: scroller, start: 'top top', end: 'bottom top', scrub: true, scroller }
       });
       
-      // Noise texture speed 0 - moves with scroll
-      
       if (lightRaysRef.current) gsap.to(lightRaysRef.current, {
-        yPercent: 15, // equivalent to speed 0.2
+        yPercent: 15,
         ease: 'none',
         scrollTrigger: { trigger: scroller, start: 'top top', end: 'bottom top', scrub: true, scroller }
       });
       
       if (sakura1Ref.current) gsap.to(sakura1Ref.current, {
-        yPercent: 30, // equivalent to speed 0.5
+        yPercent: 30,
         ease: 'none',
         scrollTrigger: { trigger: scroller, start: 'top top', end: 'bottom top', scrub: true, scroller }
       });
       
       if (petalsRef.current) gsap.to(petalsRef.current, {
-        yPercent: 5, // equivalent to speed 0.1
+        yPercent: 5,
         ease: 'none',
         scrollTrigger: { trigger: scroller, start: 'top top', end: 'bottom top', scrub: true, scroller }
       });
       
       if (logoRef.current) gsap.to(logoRef.current, {
-        yPercent: -15, // equivalent to speed -0.2
+        yPercent: -15,
         ease: 'none',
         scrollTrigger: { trigger: scroller, start: 'top top', end: 'bottom top', scrub: true, scroller }
       });
       
       if (sakura2Ref.current) gsap.to(sakura2Ref.current, {
-        yPercent: 40, // equivalent to speed 0.6
+        yPercent: 40,
         ease: 'none',
         scrollTrigger: { trigger: scroller, start: 'top top', end: 'bottom top', scrub: true, scroller }
       });
@@ -111,11 +105,12 @@ function ParallaxComponent() {
         <div 
           ref={noiseTextureRef}
           className="absolute top-0 w-full h-[500vh] pointer-events-none" 
-          style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.1'        />
+          style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.1'/%3E%3C/svg%3E")`, zIndex: -3, opacity: 0.2 }} 
+        />
         
         <div 
-          ref={noiseTextureRef}
-          className="absolute top-0 w-full h-[500vh] pointer-events-nonute top-0 w-full h-[200vh] pointer-events-none" 
+          ref={lightRaysRef}
+          className="absolute top-0 w-full h-[200vh] pointer-events-none" 
           style={{ background: 'radial-gradient(circle at 50% 50%, rgba(255, 255, 180, 0.08), transparent 70%)', zIndex: -3 }} 
         />
         
