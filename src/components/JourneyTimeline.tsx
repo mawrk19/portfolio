@@ -44,35 +44,24 @@ const JourneyTimeline = () => {
     },
   ];
 
-    // Landscape (horizontal) timeline
+    // Clean, minimal horizontal timeline
     return (
-      <div className="w-full max-w-6xl mx-auto py-8 px-4 overflow-x-auto scrollbar-hide">
-        <div className="relative flex flex-col md:flex-row items-center justify-start gap-12 min-w-[700px] md:min-w-0" style={{ minWidth: '600px' }}>
+      <div className="w-full max-w-6xl mx-auto py-16 px-4 overflow-x-auto">
+        <div className="relative flex flex-row items-start justify-between gap-8 min-w-[700px]">
           {/* Horizontal line */}
-          <div className="hidden md:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-yellow-500/50 via-pink-500/30 to-transparent -translate-y-1/2 z-0" />
+          <div className="absolute left-0 right-0 top-12 h-1 bg-gray-300 z-0" />
           {events.map((event, idx) => (
-            <div key={idx} className="relative flex flex-col items-center z-10 w-56 flex-shrink-0">
+            <div key={idx} className="flex flex-col items-center flex-1 min-w-[200px] max-w-[260px]">
+              {/* Icon */}
+              <div className="mb-2 text-3xl">{event.icon}</div>
               {/* Dot on the line */}
-              <div className={`w-4 h-4 rounded-full ${event.dot} shadow-lg mb-2`}>
-                <div className={`absolute inset-0 rounded-full ${event.dot} animate-ping opacity-20`} />
-              </div>
-              {/* Card */}
-              <div className="relative overflow-hidden rounded-3xl p-6 backdrop-blur-xl border border-white/10 hover:border-white/20 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/20 group bg-gray-900/80">
-                {/* Gradient glow */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${event.color} opacity-10 group-hover:opacity-25 transition-opacity duration-500`} />
-                <div className="absolute -top-10 -right-10 w-32 h-32 bg-white/5 rounded-full blur-2xl group-hover:bg-white/10 transition-all duration-700" />
-                <div className="relative z-10">
-                  {/* Icon + Year */}
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className={`flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br ${event.color} text-white shadow-lg group-hover:scale-110 transition-transform`}>
-                      {event.icon}
-                    </div>
-                    <span className="text-yellow-500 font-mono font-bold text-sm tracking-wider">{event.year}</span>
-                  </div>
-                  <h3 className="text-lg font-header font-bold text-white mb-2">{event.title}</h3>
-                  <p className="text-sm font-primary text-white/60 leading-relaxed">{event.description}</p>
-                </div>
-              </div>
+              <div className={`w-4 h-4 rounded-full ${event.dot} border-4 border-white z-10 mb-2`} style={{ marginTop: '-18px', marginBottom: '8px' }} />
+              {/* Year */}
+              <div className="font-bold text-xl mb-1" style={{ color: idx === 0 ? '#3498db' : idx === 1 ? '#38b48e' : idx === 2 ? '#f7b731' : idx === 3 ? '#f7b731' : '#e17055' }}>{event.year}</div>
+              {/* Title */}
+              <div className="font-bold text-lg mb-1 text-center" style={{ color: idx === 0 ? '#222' : idx === 1 ? '#222' : idx === 2 ? '#222' : idx === 3 ? '#222' : '#222' }}>{event.title}</div>
+              {/* Description */}
+              <div className="text-gray-700 text-sm text-center leading-relaxed">{event.description}</div>
             </div>
           ))}
         </div>
