@@ -38,7 +38,7 @@ const GithubStats = () => {
       {/* Status */}
       <div className="bg-white/5 border border-white/10 p-3 rounded-2xl w-full text-center mb-6">
         <div className="flex justify-center items-center gap-1.5 mb-1">
-          <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+          <span className="w-2 h-2 rounded-full bg-gray-400" />
           <span className="text-[9px] font-bold uppercase tracking-widest text-white/40">Status</span>
         </div>
         <p className="text-xs font-primary text-white/80">Building immersive digital experiences 🌸</p>

@@ -10,6 +10,7 @@ export const projectDetails = {
   tesda: {
     title: "NCIII JAVA",
     img: tesda,
+    tags: ["Java", "OOP", "Certification"],
     content: `This certificate represents my completion of the NC III in Java Programming, issued by TESDA.
 
 It's more than just a credential—it's a milestone in my journey as a developer. It reflects the foundational knowledge and practical skills I gained in object-oriented programming, application development, and software design.
@@ -19,6 +20,7 @@ Receiving this certification reinforced my passion for clean, efficient code and
   sis: {
     title: "Student Info System",
     img: sis,
+    tags: ["Java", "PostgreSQL", "Desktop"],
     content: `The Student Info System (SIS) is a native desktop application for academic institutions to manage student records.
 
 It features:
@@ -35,6 +37,7 @@ Built using JAVA GUI for the frontend, Java for backend, and PostgreSQL for data
   kopilism: {
     title: "Kopilism App",
     img: kopilism,
+    tags: ["Flutter", "Firebase", "Mobile"],
     content: `Kopilism is a mobile coffee ordering app designed for cafés and small coffee businesses.
 
 Key features:
@@ -48,6 +51,7 @@ Built using Flutter for cross-platform compatibility and Firebase for real-time 
   sage: {
     title: "Sage AI",
     img: sage,
+    tags: ["React", "Express", "OpenAI"],
     content: `Sage AI is an interactive, text-based RPG powered by artificial intelligence.
 
 Players can explore fantasy worlds, talk to characters, and make decisions that shape the story—powered by OpenAI's GPT API.
@@ -64,6 +68,7 @@ Each playthrough feels unique thanks to real-time AI prompts, offering a balance
   "kpop": {
     title: "K-Express",
     img: kpop,
+    tags: ["HTML", "CSS", "JS"],
     content: `A website dedicated to Kpop enthusiasts.
 
 Created with:
@@ -94,6 +99,7 @@ Designed as an educational game to demonstrate how digital signals affect moveme
   cpu: {
     title: "Dual Core CPU Simulator",
     img: cpu,
+    tags: ["Logisim", "Computer Architecture"],
     content: `This project is a visual simulator of a 16-bit dual-core CPU, created for academic and demonstration purposes.
 
 Key Features:

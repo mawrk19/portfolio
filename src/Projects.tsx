@@ -13,36 +13,42 @@ function Projects() {
       title: "NCIII JAVA",
       body: "this certificate represents my completion of the NC III in Java Programming, issued by TESDA.",
       link: "/blog/tesda",
+      tags: ["Java", "OOP", "Certification"],
     },
     {
       img: sis,
       title: "Student Info System",
       body: "A complete student records management system with CRUD features and admin panel.",
       link: "/blog/sis",
+      tags: ["Java", "PostgreSQL", "Desktop"],
     },
     {
       img: kopilism,
       title: "Kopilism App",
       body: "Mobile coffee ordering system with QR scanning and inventory tracking using Flutter.",
       link: "/blog/kopilism",
+      tags: ["Flutter", "Firebase", "Mobile"],
     },
     {
       img: sage,
       title: "Sage AI",
       body: "A text based adventure game using AI. Built with React, Tailwind, Express and OpenAI API.",
       link: "/blog/sage",
+      tags: ["React", "Express", "OpenAI"],
     },
     {
       img: kpop,
       title: "K-Express",
       body: "A website dedicated to Kpop enthusiasts.",
       link: "/blog/kpop",
+      tags: ["HTML", "CSS", "JS"],
     },
     {
       img: cpu,
       title: "Dual Core CPU Simulator",
       body: "Visual tool that simulates a 16-bit dual core cpu that has a text based OS. Built on Logisim Evolution.",
       link: "/blog/cpu",
+      tags: ["Logisim", "Computer Architecture"],
     },
   ];
 
@@ -67,6 +73,7 @@ function Projects() {
             title={project.title}
             body={project.body}
             link={project.link}
+            tags={(project as any).tags}
           />
         ))}
       </div>

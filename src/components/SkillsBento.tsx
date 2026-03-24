@@ -16,8 +16,8 @@ const SkillsBento = () => {
         { name: "JavaScript", icon: <FaJs />, color: "text-[#F7DF1E]" },
       ],
       className: "md:col-span-2 md:row-span-1",
-      gradient: "from-cyan-500/20 to-blue-600/20",
-      border: "border-cyan-500/20 hover:border-cyan-400/40",
+        gradient: "from-gray-500/20 to-gray-400/20",
+        border: "border-gray-500/20 hover:border-gray-400/40",
     },
     {
       title: "Backend",
@@ -55,8 +55,8 @@ const SkillsBento = () => {
         { name: "Terminal", icon: <FaTerminal />, color: "text-green-500" },
       ],
       className: "md:col-span-3 md:row-span-1",
-      gradient: "from-green-500/20 to-emerald-500/20",
-      border: "border-green-500/20 hover:border-green-400/40",
+        gradient: "from-gray-500/20 to-gray-400/20",
+        border: "border-gray-500/20 hover:border-gray-400/40",
     },
   ];
 
